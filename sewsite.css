@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     font-family: 'PT Serif', serif;
     background-color: rgb(235, 233, 230);
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -29,15 +30,8 @@ body {
 
 
 @media (max-width: 1199.98px){
-.header-grid{
-    display: grid;
-    height: 60vh;
-    width: 86%;
-    margin: auto;
 
-    grid-template-rows: 2vh 7vh 30vh 7vh 50vh;
-    grid-template-columns: 100%;
-}
+
  .header-img {
     background-image: url(header.png);
     background-repeat: no-repeat;
@@ -54,16 +48,26 @@ body {
 }
 
 .nav-bar{
-    visibility: visible;
+    visibility: hidden;
     position: relative;
-    margin: auto;
-    color: red;
+    display:inline-flex;
+    
+    
 
 }
+#navbarICON {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    position: relative;
+    
+}
 .nav-bar li{
+    position: relative;
     display:inline-flex;
     text-align: center;
     font-weight: bold;
+    top: 12px;
 }
 .nav-bar-word-format {
     margin: 0 30px 0 30px;
@@ -91,12 +95,158 @@ body {
 }
 
 
-/* BEGINING OF MEDIA QUERY */
-/* BEGINING OF MEDIA QUERY */
-/* BEGINING OF MEDIA QUERY */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+/* BEGINING OF MOBILE */
+
 @media (min-width: 600px) {
 
+.mobile-background-header-image {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top:0;
+    background-image: url(quiltOnWall.PNG);
+    z-index: -9999;
+    opacity: 80%;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+.mobile-header-slogan-parent {
+    height: 20vh;
+    width: 100vw;
+    position: relative;
+    top: 10vh;
+
+}
+.mobile-header-slogan-parent h1 {
+    font-weight: 1000;
+    font-size: 130px;
+    width: 480px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.buttonStyling {
+    height: 60px;
+    width: 180px;
+    position: relative;
+    background-color:rgb(255, 255, 255);
+    margin: auto;
+    top: 40px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+   
+
 .header-grid{
+    visibility: hidden;
     display: grid;
     height: 60vh;
     width: 86%;
@@ -105,17 +255,58 @@ body {
     grid-template-rows: 2vh 7vh 30vh 7vh 50vh;
     grid-template-columns: 100%;
 }
-/* .header-img {
-    background-image: url(header.png);
-    background-repeat: no-repeat;
-    position: relative;
-    text-align: center;
-    margin: 100px auto 20px auto ;
-    height: 144px;
-    width: 269px;
 
-   
-} */
+
+
+.mobileNav {
+    height: 50px;
+    width: 70px;
+    cursor: pointer;
+    position: relative;
+    left: 85%;
+    top: 40px;
+}
+.hamburgerStyling {
+    width: 100%;
+    height: 7px;
+    background-color: black;
+}
+#hamBAR1{
+    margin-top: 0px;
+}
+#hamBAR2{
+    margin-top: 15px;
+}
+#hamBAR3{
+    margin-top: 15px;
+}
+#mobileNavSlider {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1000vh;
+    width: 60vw;
+    background-color: aliceblue;
+    z-index: 999;
+}
+.mobileSliderUL {
+    position: relative;
+    left: 77%;
+}
+.mobileSliderUL li {
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.navHide {
+    visibility: hidden;
+}
+
+
+
+
+
+
 .landing-grid-parent{
     grid-row-start: 3 / 4;
 }
