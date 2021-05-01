@@ -38,25 +38,43 @@ function hamburgerAnimation() {
 
 };
 
+// This is the TOS button for mobile footer
+
 function tOsExpand() {
     const footerGrid = document.getElementById('footer-grid');
+    const tosBANNER = document.getElementById('TOS-banner');
 
     if (footerGrid.classList.value === "default-Grid") {
-        document.getElementById("footerTOSbutton").innerHTML = "Click me!"
+        // changing the text of the bottom button
+        document.getElementById("footerTOSbutton").innerHTML = "Click Here For Terms of Service"
+        // changing the grid layout
         footerGrid.classList.remove("default-Grid");
         footerGrid.classList.add("TOS-expanded-grid");
 
-        // changing the text of the bottom button
+        //hiding the tos menu
+        tosBANNER.classList.add("TOShide");
+
+        //changing the color of the button
+        document.getElementById('footerTOSbutton').classList.add('footerButtonColorHidden');
+        document.getElementById('footerTOSbutton').classList.remove('footerButtonColorActive');
 
         
+      
 
     }
     else {
-        document.getElementById("footerTOSbutton").innerHTML = "Hello"
+        // changing the text of the bottom button
+        document.getElementById("footerTOSbutton").innerHTML = "Close"
+        // changing the grid layout
         footerGrid.classList.remove("TOS-expanded-grid");
         footerGrid.classList.add("default-Grid");
 
-        
+        //hiding the tos menu
+        tosBANNER.classList.remove("TOShide");
+
+        //changing the color of the button
+        document.getElementById('footerTOSbutton').classList.add('footerButtonColorActive');
+        document.getElementById('footerTOSbutton').classList.add('footerButtonColorHidden');
     };
 
 };

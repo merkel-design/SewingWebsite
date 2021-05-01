@@ -618,28 +618,36 @@ footer {
     
     height: 100%;
     width: 100%;
-    background-color: rgb(214, 182, 193);
+    background-color: rgb(255, 226, 251);
     color: rgb(31, 31, 31);
-    z-index: 1000;
-    
+    z-index: 1000; 
+}
+.TOShide {
+    visibility: hidden;
 }
 
 #footer-TOS i {
     margin-right: 20px;
 }
 
-#footerTOSbutton {
+.footerButtonColorHidden {
+    background-color: rgb(255, 226, 251);
+}
+.footerButtonColorActive{
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
 
+#footerTOSbutton {
     position: absolute;
     bottom: 0;
-    left: 30vw;
+    left: 15vw;
     font-size: 2rem;
     letter-spacing: 3px;
     border-radius: 7px;
     height: 50px;
-    width: 40vw;
+    width: 70vw;
     line-height: 50px;
-    background-color: green;
     text-align: center;
 }
 
