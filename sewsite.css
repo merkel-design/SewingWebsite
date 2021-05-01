@@ -208,6 +208,7 @@ body {
 
 body {
     height: 100%;
+    z-index: 9999999999;
     }
 
     /* FONTS */
@@ -242,7 +243,7 @@ body {
     width: 100%;
     position: absolute;
     top:0;
-    background-image: url(edited1-bottom.jpg);
+    background-image: url(shutterstock_365718428.jpg);
     z-index: -9999;
     opacity: 80%;
     background-repeat: no-repeat;
@@ -431,7 +432,10 @@ body {
     margin-right: 60px;
 }
 
-
+#prayer-mobile-format {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
 
 
 /* END OF BURGER */
