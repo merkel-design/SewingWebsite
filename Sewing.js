@@ -43,6 +43,7 @@ function hamburgerAnimation() {
 function tOsExpand() {
     const footerGrid = document.getElementById('footer-grid');
     const tosBANNER = document.getElementById('TOS-banner');
+    const lineHeightVar = document.getElementById('footer-item');
 
     if (footerGrid.classList.value === "default-Grid") {
         // changing the text of the bottom button
@@ -58,7 +59,8 @@ function tOsExpand() {
         document.getElementById('footerTOSbutton').classList.add('footerButtonColorHidden');
         document.getElementById('footerTOSbutton').classList.remove('footerButtonColorActive');
 
-        
+      
+
       
 
     }
@@ -75,6 +77,16 @@ function tOsExpand() {
         //changing the color of the button
         document.getElementById('footerTOSbutton').classList.add('footerButtonColorActive');
         document.getElementById('footerTOSbutton').classList.add('footerButtonColorHidden');
+
+        //Changing the line height to center the text
+
+            document.getElementById('footer-gallery').style.lineHeight = '3.5';
+            document.getElementById('footer-services').style.lineHeight = '3.5';
+            document.getElementById('footer-aboutUs').style.lineHeight = '3.5';
+            document.getElementById('footer-contact').style.lineHeight = '3.5';
+            // document.getElementById('').style.lineHeight = '5';
+            // document.getElementById('').style.lineHeight = '5';
+            // document.getElementById('').style.lineHeight = '5';
     };
 
 };
