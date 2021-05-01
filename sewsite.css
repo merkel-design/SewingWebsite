@@ -210,6 +210,23 @@ body {
     height: 100%;
     }
 
+    /* FONTS */
+
+
+    @font-face {
+        font-family: 'Tahu!';
+        src: url('Tahu.woff2') format('woff2'),
+            url('Tahu.woff') format('woff'),
+            url('Tahu.ttf') format('truetype');
+        
+        font-display: swap;
+    }
+    
+
+
+
+    /* END FONTS */
+
 #mobile-nav-parent-BG {
     position: fixed;
     z-index: 999;
@@ -280,10 +297,15 @@ body {
 
 #front-page-text {
     text-align: center;
-    margin: 180px 190px 0 190px;
+    margin: 90px 190px 0 190px;
     font-size: 2.1rem;
     font-weight: 400;
     color:rgb(51, 51, 51);
+    font-family: 'Tahu!';
+    font-size: 100px;
+    color: white;
+
+    
 }
 
 #navbarICON {
@@ -397,7 +419,7 @@ body {
     overflow: visible;
 }
     
-}
+
 .mobileSliderUL li {
     margin-top: 75px;
     cursor: pointer;
