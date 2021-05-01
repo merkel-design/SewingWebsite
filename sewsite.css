@@ -324,7 +324,7 @@ body {
     height: 50px;
     width: 70px;
     cursor: pointer;
-    position: relative;
+    position: fixed;
     left: 85%;
     top: 40px;
     overflow: visible;
@@ -367,27 +367,35 @@ body {
 }
 
 #mobileNavSlider {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     height: 100vh;
     width: 60vw;
     background-color: rgb(255, 255, 255);
     z-index: 1000;
-    transition: .2s;
-    transition-timing-function: ease-out;
+
+    
+    
+    transition-timing-function: ease-in-out;
 }
 .navHide {
     visibility: hidden;
     position: relative;
     right: -3000px;  
+
+
     
     transition: .2s;
+    transition-timing-function: ease-in-out;
+
 }
 .mobileSliderUL {
     position: relative;
     left: 10%;
     top: 20%;
+    overflow: visible;
+}
     
 }
 .mobileSliderUL li {
@@ -398,7 +406,12 @@ body {
 }
 /* icon */
 .fas {
-    margin-right: 40px;
+    margin-right: 60px;
+    size: 2px;
+}
+.far{
+    margin-right: 60px;
+    
 }
 
 
