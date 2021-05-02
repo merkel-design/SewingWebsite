@@ -13,7 +13,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     font-family: 'PT Serif', serif;
-    background-color: rgb(235, 233, 230);
+    background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -213,6 +213,7 @@ body {
 
     /* FONTS */
 
+    /* font-family: 'Quicksand', sans-serif; */
 
     @font-face {
         font-family: 'Tahu!';
@@ -221,12 +222,17 @@ body {
             url('Tahu.ttf') format('truetype');
         
         font-display: swap;
+        
     }
+
+   
     
 
 
 
     /* END FONTS */
+
+   
 
 #mobile-nav-parent-BG {
     position: fixed;
@@ -549,6 +555,107 @@ body {
 
 }
 
+
+/* SERVICES PAGE */
+/* SERVICES PAGE */
+/* SERVICES PAGE */
+/* SERVICES PAGE */
+/* SERVICES PAGE */
+
+
+#servicesPage-Grid {
+    display: grid;
+    height: 1900px;
+    width: 100vw;
+    grid-template: 20fr 20fr 20fr 30fr 25fr 30fr/ 50vw 50vw;
+    position: relative;
+    top: 300px;
+    
+}
+#servicesHeader {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    font-weight: 900;
+    font-size: 50px;
+    
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#Services-icon {
+    background-image: url(servicesIMG.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+}
+.services-text-formatting {
+    margin: 20px;
+}
+#services-slogan {
+    margin: auto;
+    width: 70%;
+    font-weight: 300;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+/* formatting for the services page text items including headers and text body */
+.services-subheader {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+.services-textBody {
+    font-weight: 200;
+    color:rgb(92, 92, 92);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#servicesSUBheader1 {
+/* positioning */
+    position: relative;
+    top:30%;
+    width: 95%;
+    height: 45%;
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    margin: auto;
+    text-align: left;
+}
+#servicesSUBheader2 {
+    /* positioning */
+    position: relative;
+    
+    font-size: 40px;
+    
+    grid-row: 5 / 7;
+    grid-column: 1 / 2;
+    margin: auto auto auto 25px;
+    text-align: left;
+}
+#servicesTextbody1 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+    margin: auto;
+    width: 95%;
+}
+#servicesTextbody2 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    margin: auto;
+    width: 95%;
+    
+}
+
+
+
+
+
+
+
+/* FOOTER */
+/* FOOTER */
 
 footer {
     position: relative;
