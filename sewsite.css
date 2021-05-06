@@ -234,6 +234,26 @@ body {
 
     /* END FONTS */
 
+    /* Default HEADER */
+.default-header {
+    font-weight: 900;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+    /* Default SubHeader */
+.default-subheader {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+    /* Default Paragraph */
+.default-paragraph {
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
+}
+
     a {
         text-decoration: none; 
     }
@@ -267,19 +287,32 @@ body {
     background-size: cover;
 }
 .mobile-header-slogan-parent {
-    height: 20vh;
+    height: 30vh;
     width: 100vw;
     position: relative;
     top: 20vh;
     overflow: visible;
 
 }
-.mobile-header-slogan-parent h1 {
+.MainPage-CTA {
     font-weight: 1000;
     font-size: 130px;
     width: 480px;
     margin: auto;
     color: white;
+    text-align: center;
+}
+.MainPage-name-parent {
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+    font-family: 'Tahu!';
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+    font-size: 70px;
+}
+.MainPage-Name {
+    margin: auto;
     text-align: center;
 }
 .buttonStyling {
@@ -757,11 +790,14 @@ body {
 
 
 
-
-
-
 /* FOOTER */
 /* FOOTER */
+
+.blah {
+    height: 600px;
+    width: 100%;
+
+}
 
 footer {
     position: relative;
@@ -905,7 +941,7 @@ footer {
     top: 200px;
     height: 3000px;
     width: 100%;
-    grid-template: 20fr 50fr 30fr 40fr 50fr 30fr / 50vw 50vw;
+    grid-template: 20fr 50fr 30fr 15fr 30fr 30fr 30fr / 50vw 50vw;
 
 }
 .AboutUs-Header {
@@ -977,7 +1013,7 @@ footer {
     color: rgb(255, 247, 0);
     overflow: visible;
     position: relative;
-    margin: 2px;
+    margin: 10px;
     
 }
 .AboutUs-Testimonial-IMG {
@@ -987,7 +1023,7 @@ footer {
     margin: 20px;
 }
 .AboutUs-Testimonial-IMGTEXT  {
-    font-size: 1.5rem;
+    font-size: .9rem;
     margin: 20px;
   
 }
@@ -1001,6 +1037,62 @@ footer {
 }
 
 
+
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+
+
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+/* GALLERY PAGE */
+
+/* CAROUSEL GALLERY*/
+.carousel-positioning {
+    position: relative;
+    top: 300px;
+}
+.Gallery-Header {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    top: 350px;
+    text-align: center;
+    
+}
+.Gallery-Header h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+}
+.Gallery-Header p {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300;
+    font-size: 30px;
+}
+.gallery-subsection {
+    position: relative;
+    top: 400px;
+    margin: 20px;
+}
+
+.Gallery-CTA {
+    position: relative;
+    top: 600px;
+    height: 300px;
+    text-align: center;
+    
+}
 
 
 
