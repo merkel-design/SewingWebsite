@@ -55,29 +55,97 @@
 
     <body>
         <div class="Order-Grid-1">
+            <div class="default-header" id="order-header">Order Form for your Quilt!</div>
         <div id="form-wrapper">
-            <form action="/p/quote.php" method="GET">
-                <h1 id="form-title">Select Quilt Service</h1>
+            <form id="order-slider-form" action="/p/quote.php" method="GET">
+                <h1 id="form-title" class="default-subheader">Select Quilt Service</h1>
                 <div id="debt-amount-slider">
-                    <input type="radio" name="debt-amount" id="1" value="1" required>
-                    <label for="1" data-debt-amount="$10k"></label>
+                    <input type="radio" name="debt-amount" class="Order-slider-input" id="1" value="1" required>
+                    <label for="1" data-debt-amount="Pattern" class="Order-slider-text"></label>
                     <input type="radio" name="debt-amount" id="2" value="2" required>
-                    <label for="2" data-debt-amount="$10k-25k"></label>
+                    <label for="2" data-debt-amount="Trim Quilt"></label>
                     <input type="radio" name="debt-amount" id="3" value="3" required>
-                    <label for="3" data-debt-amount="$25k-50k"></label>
+                    <label for="3" data-debt-amount="Fabric"></label>
                     <input type="radio" name="debt-amount" id="4" value="4" required>
-                    <label for="4" data-debt-amount="$50k-100k"></label>
+                    <label for="4" data-debt-amount="EdgeToEdge"></label>
                     <input type="radio" name="debt-amount" id="5" value="5" required>
-                    <label for="5" data-debt-amount="$100k+"></label>
+                    <label for="5" data-debt-amount="Premade"></label>
                     <div id="debt-amount-pos"></div>
                 </div>
             </form>
+        </div>
+    </div>
+
+                <form id="form">
+                    <div class="parent-grid">
+                        <div id="header"><p>Create Account</p></div>
+        
+                    
+                <!-- username -->
+                            <div class="grid-form-item-position" id="username-grid-item-parent">
+                                <br>
+                                <label for="username" id="username-label">Username</label>
+                                <br>
+                                <input type="text" class="input-style formItem" id="username" placeholder="Enter your username" >
+                                <i class="fas fa-check-circle hidingToggle" id="usernameCheckmark"></i>
+                                <i class="fas fa-exclamation-circle hidingToggle" id="usernameExclamation"></i>
+                                <p class="messageFormat" id="usernameErrorMessage"></p>
+                            </div>
+        
+                <!-- EMAIL -->
+                            <div class="grid-form-item-position" id="email-grid-item-parent">
+                                <label for="email" id="email-label">Email</label>
+                                <br>
+                                <input type="text" class="input-style" id="email" placeholder="Enter your email">
+                                <i class="fas fa-check-circle hidingToggle" id="emailCheckmark"></i>
+                                <i class="fas fa-exclamation-circle hidingToggle" id="emailExclamation"></i>
+                                <p class="messageFormat" id="emailErrorMessage"></p>
+                            </div>
+        
+                <!-- password1 -->
+                            <div class="grid-form-item-position" id="password-grid-item-parent">
+                                <label for="password1" id="password-label">Password</label>
+                                <br>
+                                <input type="password" class="input-style" id="password1" placeholder="Enter your password">
+                                <i id="pass1Eye" onclick="showPassword(password1,pass1Eye)"class="far fa-eye-slash togglePasswordCheckbox"></i>
+                                <i class="fas fa-check-circle hidingToggle" id="password1Checkmark"></i>
+                                <i class="fas fa-exclamation-circle hidingToggle" id="password1Exclamation"></i>
+        
+                                <p class="messageFormat" id="password1message"></p>
+                            </div>
+        
+                <!-- password2 -->
+                            <div class="grid-form-item-position" id="confirm-grid-item-parent">
+                                <label for="password2" id="password-label">Confirm Password</label>
+                                <input type="password" class="input-style" id="password2" placeholder="re-enter your password">
+                                <i id="pass2Eye" onclick="showPassword(password2,pass2Eye)"class="far fa-eye-slash togglePasswordCheckbox"></i>
+                                <i class="fas fa-check-circle hidingToggle" id="password2Checkmark"></i>
+                                <i class="fas fa-exclamation-circle hidingToggle" id="password2Exclamation"></i>
+        
+                                <p class="messageFormat" id="password2message"></p>
+                            </div>
+        
+        
+        
+                            <div id="button-grid-item-parent">
+                                <button id="submit-button">Submit</button>
+                                
+                            </div>
+        
+                    
+        
+        
+                    </div>
+                </form>
+
+
+            
             <!-- USE THIS BUTTON TO SUBMIT THE FORM -->
             <!-- <button type="submit">Get Debt Free!</button> -->
-        </div>
+        
 
         
-        </div>
+        
 
         <!-- <div class="Order-Grid-1">
             <div class="default-header">ORDER</div>
