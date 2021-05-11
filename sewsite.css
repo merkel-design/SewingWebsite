@@ -1099,13 +1099,11 @@ grid-template: 50fr 50fr 100fr;
     grid-column: 1 / 2;
 }
 
-.hmm {
+/* custom Slider css */
+#form-wrapper {
     position: relative;
-    top: 500px;
+    
 }
-
-
-
 /* FOOTER */
 /* FOOTER */
 
