@@ -4,7 +4,6 @@
     <header>
         <link type="text/css" rel="stylesheet" href="sewsite.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preload" href="Tahu.woff2" as="font" type="font/woff2" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -28,17 +27,17 @@
     </div>
 
     <div class="navHide" id="mobileNavSlider">
-      <ul class="mobileSliderUL">
-          <li> <a href="SewingIndex.html"><i class="fas fa-home fa-xs"></i>Home</li></a>
-          <li><a a href="SewingServices.html"><i class="fas fa-diagnoses fa-xs"></i>Services</li></a>
-          <li><a href="SewingAboutUs.html"><i class="far fa-id-card fa-xs"></i>About Us</li></a>
-          <li><a href="SewingPatterns.html"><i class="fas fa-layer-group fa-xs"></i>Edge to Edge Patterns</li></a>
-          <!-- <li><a><i class="fas fa-camera-retro fa-xs"></i>Gallery</li></a> -->
-          <li><a href="SewingContact.html"><i class="fas fa-paper-plane fa-xs"></i>Contact Us</li></a>
-          <li><a href="SewingOrder.html"><i class="far fa-comments fa-xs"></i>Order</li></a>
-          <li id="prayer-mobile-format"><a></a><i class="fas fa-pray fa-xs"></i>Prayer Requests</li>
-      </ul>
-  </div>
+        <ul class="mobileSliderUL">
+            <li> <a href="SewingIndex.html"><i class="fas fa-home fa-xs"></i>Home</li></a>
+            <li><a a href="SewingServices.html"><i class="fas fa-diagnoses fa-xs"></i>Services</li></a>
+            <li><a href="SewingAboutUs.html"><i class="far fa-id-card fa-xs"></i>About Us</li></a>
+            <li><a href="SewingPatterns.html"><i class="fas fa-layer-group fa-xs"></i>Edge to Edge Patterns</li></a>
+            <li><a href="SewingGallery.html"><i class="fas fa-camera-retro fa-xs"></i>Gallery</li></a>
+            <li><a href="SewingContact.html"><i class="fas fa-paper-plane fa-xs"></i>Contact Us</li></a>
+            <li><a href="SewingOrder.html"><i class="far fa-comments fa-xs"></i>Order</li></a>
+            <li id="prayer-mobile-format"><a></a><i class="fas fa-pray fa-xs"></i>Prayer Requests</li>
+        </ul>
+    </div>
 
 
 
@@ -52,11 +51,11 @@
 
     
 
-    <body>
+    <body id="pattern-body">
 
         <div class="Gallery-Header">
-            <h1 >Q qallery</h1>
-            <p>See our most recent quilts!</p>
+            <h1 >Pattern Selection</h1>
+            <p>Choose your favorite pattern for your quilt!!!!</p>
         </div>
         
         <div class="carousel-positioning">
@@ -102,9 +101,31 @@
             <div class="buttonStyling">Start Order</div>
         </div>
 
-       
 
-        
+
+        <div id="pattern-grid">
+
+
+            <div class="styling-for-images patern-grid-item" id="uno" onclick="patternClicked(this.id)"></div>
+            <div class="styling-for-images patern-grid-item"></div>
+            <div class="styling-for-images patern-grid-item"></div>
+            <div class="styling-for-images patern-grid-item"></div>
+            <div class="styling-for-images patern-grid-item"></div>
+            <div class="styling-for-images patern-grid-item"></div>
+            <div class="styling-for-images patern-grid-item"></div>
+            <div class="styling-for-images patern-grid-item"></div>
+            <div class="styling-for-images patern-grid-item"></div>
+            
+        </div>
+
+
+
+
+
+
+
+
+
 
 
         
@@ -144,6 +165,9 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
 
     </body>
 
