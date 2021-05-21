@@ -272,12 +272,25 @@ body {
       }
    
 
-      #index-page-body {
-          height: 6000px;
+#index-page-body {
+    height: 2000px;
       }
-      #pattern-body {
-        height: 6000px;
+#pattern-body {
+    height: 2000px;
       }
+#contact-body{
+    height: 400px;
+      }
+#services-body{
+    height: 1000px;
+}
+#aboutUs-body {
+    height: 200px;
+}
+#gallery-body {
+    height: 700px;
+}
+
 #mobile-nav-parent-BG {
     position: fixed;
     z-index: 999;
@@ -483,12 +496,18 @@ body {
     height: 100vh;
     width: 60vw;
     background-color: rgb(245, 245, 245);
-    z-index: 1000;
-
-    
-    
-    
+    z-index: 1000;  
 }
+#mobile-grey-hamburger-clickToClose {
+    position: absolute;
+    z-index: -900;
+    height: 100vh;
+    width: 100vw;
+   left: -70%;
+    background-color: rgb(49, 49, 49);
+    opacity: 50%;
+}
+
 .navHide {
     visibility: hidden;
     position: relative;
@@ -523,6 +542,16 @@ body {
 #prayer-mobile-format {
     font-size: 3rem;
     letter-spacing: 2px;
+}
+#centerBurgerText {
+    position: relative;
+    left: -50px;
+    text-align: center!important;
+    letter-spacing: 5px;
+    
+}
+#EdgeToEdgeBurgerStyling {
+    margin-right: 50px;
 }
 
 
@@ -1159,16 +1188,10 @@ width: 100%;
     /* background-size: contain; */
     background-image: url("https://lh3.googleusercontent.com/proxy/OP6R2olV3S5FOwUwDqno9tcO0CLov1t6htmNdVxi9-AOLf9ImjrP2cZLCvRGUMKp3VoaOoWAmV7eDXCXtxFH0rIQ7PVDC0PJqDAwKEqmPueTcmw7mWDR9bz_1g");
 }
-.cat {
-    background-image: url("https://i.natgeofe.com/n/3861de2a-04e6-45fd-aec8-02e7809f9d4e/02-cat-training-NationalGeographic_1484324.jpg");
-    overflow: visible;
-    position: relative;
-    display: block;
-    width: 800px;
-    height: 900px;
-    margin-left: 60px;
 
-   
+.patternHovered {
+    background-color: black;
+    z-index: 999;
 }
 
 

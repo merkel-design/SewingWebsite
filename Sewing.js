@@ -15,7 +15,7 @@ TOSbutton.addEventListener('click', (e) => {
 
 
 
-
+//this toggles the hamburger menu❤💚💚💛
 
 function hamburgerAnimation() {
 
@@ -145,19 +145,7 @@ function tOsExpand() {
 //JS FOR PATTERN GALLERY
 //JS FOR PATTERN GALLERY
 
-function patternClicked(x) {
-catHide = document.querySelector(".patern-grid-item");
-
-
-
-if (catHide.classList !== ".cat") {
-    uno.classList.add("cat")
-    console.log(catHide.classList)
-}
-else if (catHide.classList === ".cat"){
-    uno.classList.remove("cat")
-}
+function patternHover(x) {
 
 
 };
-
