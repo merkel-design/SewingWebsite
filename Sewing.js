@@ -23,19 +23,29 @@ function hamburgerAnimation() {
     document.getElementById('hamBAR2').classList.toggle("burger2Active");
     document.getElementById('hamBAR3').classList.toggle("burger3Active");
 
+    //grey background div
+    const greyBG = document.getElementById('mobile-grey-hamburger-clickToClose');
+
     
 
     if (document.getElementById('mobileNavSlider').classList.value === "navHide") {
 
         document.getElementById('mobileNavSlider').classList.remove("navHide");
+        greyBG.classList.remove("navHide");
     }
     else if (document.getElementById('mobileNavSlider').classList.value  !== "navHide"){
 
         document.getElementById('mobileNavSlider').classList.add("navHide");
+        greyBG.classList.add("navHide");
     }
 
 
 
+};
+
+//click the grey bg on mobile then it closes the mobile nav.
+function clickTheGreyBackgroundToCloseMobile() {
+    hamburgerAnimation();
 };
 
 // This is the TOS button for mobile footer
