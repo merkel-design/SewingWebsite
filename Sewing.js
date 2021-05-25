@@ -130,7 +130,6 @@ function sendEmail() {
         };
 
     emailjs.send('service_bm94n3m', 'template_grhu6vv', UserContactMessageContent).then(function(res){
-        console.log("success");
     });
 
     ContactUsSuccess();
