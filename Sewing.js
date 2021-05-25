@@ -1,3 +1,4 @@
+
 const burger = document.getElementById('burger');
 const TOSbutton = document.getElementById('footerTOSbutton');
 
@@ -101,61 +102,39 @@ function tOsExpand() {
 
 };
 
+//Contact Form JS
 
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
-//JS FOR PATTERN GALLERY
+const ContactUs = document.getElementById("contact-form-Submit-button");
 
-function patternHover(x) {
+ContactUs.addEventListener('click', (e) => {
+   
+    sendEmail();
+    
+});
 
 
+function sendEmail() {
+
+    let UserContactMessageContent = {
+
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("lastName").value,
+            userEmail: document.getElementById("userEmail").value,
+            subject: document.getElementById("userSelectedSubject").value,
+            userMessage: document.getElementById("userMessage").value,
+            fullName: firstName + " " + lastName
+    };
+
+        function ContactUsSuccess() {
+            document.getElementById("successMessageParent").classList.remove("closed-message-class");
+        };
+
+    emailjs.send('service_bm94n3m', 'template_grhu6vv', UserContactMessageContent).then(function(res){
+        console.log("success");
+    });
+
+    ContactUsSuccess();
+
+   
 };
+

@@ -279,7 +279,7 @@ body {
     height: 2000px;
       }
 #contact-body{
-    height: 400px;
+    height: 2000px;
       }
 #services-body{
     height: 1000px;
@@ -323,6 +323,10 @@ body {
     overflow: visible;
 
 }
+#CTA {
+    position: relative;
+    top: 200px;
+}
 .MainPage-CTA {
     font-weight: 1000;
     font-size: 130px;
@@ -334,7 +338,7 @@ body {
 .MainPage-name-parent {
     border: 1px solid black;
     width: 70%;
-    height: 200px;
+    height: 340px;
     margin: auto;
     font-family: 'Tahu!';
     color: rgb(0, 0, 0);
@@ -348,7 +352,8 @@ body {
     font-size: 120px;
     overflow: visible;
     position: relative;
-    top: 16%;
+   
+    padding: 30px;
 }
 .buttonStyling {
     height: 80px;
@@ -369,10 +374,14 @@ body {
     position: relative;
     top: 27%;
 }
+#orderbuttonlink{ 
+    height: 100%;
+    width: 100%;
+}
 
 #main-page-paintBrush-BG {
     position: relative;
-    top: 200px;
+    top: 600px;
     height: 600px;
     width: 80%;
     background-image: url(paintBrush.png);
@@ -614,7 +623,7 @@ body {
 .block-container-grid {
     display: grid;
     position: relative;
-    top: 400px;
+    top: 1000px;
     height: 2000px;
     width: 90vw;
     grid-template: 33fr 33fr 33fr / 90vw;
@@ -1048,7 +1057,7 @@ body {
     width: 100%;
 }
 
-.contactUs-form {
+#contactUs-form {
     overflow: visible; 
 }
 .contactUs-Grid-parent {
@@ -1105,7 +1114,7 @@ body {
     grid-column: 1 / 2;
     overflow: visible;
 }
-#contactUs-message-box {
+#userMessage {
     position: relative;
     height: 300px;
     width: 100%;
@@ -1120,6 +1129,70 @@ body {
     grid-column: 1 / 2;
 }
 
+#successMessageParent {
+    position: fixed;
+    background-color: rgb(242, 242, 242);
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    border-radius: 10px;
+    top: 0;
+    z-index: 100000;
+}
+#contactPage-checkMark {
+    color: rgb(157, 250, 121);
+    position: relative;
+    left: 43%;
+    top: 450px;
+    
+}
+
+#contactPage-message {
+    position: relative;
+    width: 90vw;
+    height: 400px;
+    margin: auto; 
+    padding: 30px;
+    font-size: 40px;
+    top: 550px;
+    text-align: center;
+    
+}
+
+/* Close message "X" for JS --contact page orig coded for-- */
+
+#close-message-X {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 100px;
+    left: 79%;
+    cursor: pointer;
+    
+}
+.X-bar-formatting_close-window {
+    height: 7px;
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    border-radius: 6px;
+    
+}
+#bar1 {
+    transform: rotate(45deg);
+    
+    position: relative;
+    top: 38px;
+    left: 2px;
+}
+#bar2 {
+    transform: rotate(-45deg);
+    position: relative;
+    top: 30px;
+}
+.closed-message-class {
+    display: hidden;
+    display: none;
+}
 /* ORDER PAGE */
 /* ORDER PAGE */
 /* ORDER PAGE */
