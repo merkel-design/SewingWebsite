@@ -137,3 +137,33 @@ function sendEmail() {
    
 };
 
+
+function updateOrderAmountPLUS() {
+
+
+    let price = parseInt(document.getElementById("price").innerHTML);
+
+    if (price < 250) {
+        let updatedPrice = (price + 50)
+
+        document.getElementById("price").innerHTML = (updatedPrice);
+
+
+    }
+    
+
+    
+};
+function updateOrderAmountMINUS() {
+    let price = parseInt(document.getElementById("price").innerHTML);
+
+    if (price <= 250 && price >= 100) {
+        let updatedPrice = (price - 50)
+
+        document.getElementById("price").innerHTML = (updatedPrice);
+
+
+    }
+
+
+};

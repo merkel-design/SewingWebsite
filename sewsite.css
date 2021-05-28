@@ -1211,12 +1211,12 @@ body {
 #order-grid {
     display: grid;
     position: relative;
-    height: 1500px;
+    height: 1000px;
     width: 100vw;
     margin: auto;
     top: 100px;
     background-color: rgb(255, 255, 255);
-    grid-template: 15fr 50px 10fr 10fr 10fr 10fr 10fr 10fr / 66fr 18fr 20fr;
+    grid-template: 15fr 50px 10fr 5fr / 66fr 18fr 20fr;
     
 }
 #order-header-checkout {
@@ -1249,7 +1249,7 @@ body {
 
 #order-item-1 {
     grid-row: 3 / 4;
-    grid-column: 1 / 2s;
+    grid-column: 1 / 2;
 }
 #order-item1-image {
     background-image: url("shutterstock_1611195814.jpg");
@@ -1264,7 +1264,98 @@ body {
     position: relative;
     left: 240px;
     top: -165px;
-    width: calc(100% - 220px)
+    width: calc(100% - 220px);
+}
+
+.quantity-item-parent {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    position: relative;
+    top: 60px;
+    height: 150px;
+    width: 200px;
+    padding-left: 30px;
+    
+}
+#number-input-position {
+    position: absolute;
+    
+    
+
+}
+#number-input {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    left: 64px;
+    bottom: 22px;
+    text-align: center;
+    border: 0;
+}
+.minus-symbol-placement{
+    position: relative;
+    height: 50%;
+    width: 40px;
+    left: 0px;
+    margin: 20% 5px auto 0;
+    cursor: pointer;
+}
+.plus-symbol-placement {
+    position: absolute;
+    left: 160px;  
+    height: 50%;
+    width: 40px;
+    bottom: 40px;
+    cursor: pointer;
+}
+.minus-symbol {
+    height: 5px;
+    width: 30px;
+    background-color: rgb(60, 60, 60);
+    position: relative;
+    margin: auto;
+    top: 40%;
+    border-radius: 20px;
+}
+#plus-symbol-1 {
+    height: 6px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: rgb(60, 60, 60);
+    position: relative;
+    margin: auto;
+    top: 40%;
+
+}
+#plus-symbol-2 {
+    height: 6px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: rgb(60, 60, 60);
+    position: relative;
+    margin: auto;
+    top: 24px;
+    transform: rotate(-90deg);
+    
+}
+
+#price-position {
+    position: relative;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4; 
+}
+#price{
+    width: 100%;
+}
+
+#smart-button-container {
+    position: relative;
+    margin: auto;
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
 }
 
 
