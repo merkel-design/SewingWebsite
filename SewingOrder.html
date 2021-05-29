@@ -79,15 +79,16 @@
 
             <div class="quantity-item-parent" id="quantity-1">
 
-                <div class="minus-symbol-placement" onclick="this.parentNode.querySelector('#number-input').stepDown(), updateOrderAmountMINUS()">
+                <div class="minus-symbol-placement" onclick="this.parentNode.querySelector('#number-input').stepDown(), updateOrderAmount()">
                     <div class="minus-symbol"></div>
                 </div>
                 
                 <div id="number-input-position">
-                    <input id="number-input" class="default-subheader" type="number" min="1" max="5" value="1">
+                    <input id="number-input" class="default-subheader" type="number" min="1" max="5" step="1" value="1" oninput = "updateOrderAmount(), (!validity.rangeOverflow||(value=5)) && (!validity.rangeUnderflow||(value=1)) &&
+                    (!validity.stepMismatch||(value=parseInt(this.value)));">
                 </div>
 
-                <div class="plus-symbol-placement" onclick="this.parentNode.querySelector('#number-input').stepUp(), updateOrderAmountPLUS()">
+                <div class="plus-symbol-placement" onclick="this.parentNode.querySelector('#number-input').stepUp(), updateOrderAmount()">
                     <div id="plus-symbol-1"></div>
                     <div id="plus-symbol-2"></div>
                 </div>

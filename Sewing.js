@@ -138,32 +138,37 @@ function sendEmail() {
 };
 
 
-function updateOrderAmountPLUS() {
+function updateOrderAmount() {
 
-
+    //as a # not the element
     let price = parseInt(document.getElementById("price").innerHTML);
+
 
     if (price < 250) {
-        let updatedPrice = (price + 50)
-
-        document.getElementById("price").innerHTML = (updatedPrice);
-
-
-    }
-    
-
-    
-};
-function updateOrderAmountMINUS() {
-    let price = parseInt(document.getElementById("price").innerHTML);
-
-    if (price <= 250 && price >= 100) {
-        let updatedPrice = (price - 50)
-
-        document.getElementById("price").innerHTML = (updatedPrice);
+        
+        document.getElementById("price").innerHTML = ((document.getElementById("number-input").value) * 50);
 
 
     }
+    else if (price <= 250 && price >= 100) {
+        
+         document.getElementById("price").innerHTML = ((document.getElementById("number-input").value) * 50);
 
 
+    }
+    else if (price > 250) {
+        
+        document.getElementById("price").innerHTML = "250";
+        throw new Error("Please enter a quantity between 1 and 5. Thank you.")
+        
+    }
+    else if (price < 50) {
+        
+        document.getElementById("price").innerHTML = "50";
+        throw new Error("Please enter a quantity between 1 and 5. Thank you.")
+        
+    }
+    
 };
+
+
