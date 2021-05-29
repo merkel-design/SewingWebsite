@@ -95,6 +95,24 @@ body {
 }
 
 
+    
+
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
+/* DO NOTE CODE BELOW THIS BRACKET */
 }
 
 
@@ -282,7 +300,7 @@ body {
     height: 2000px;
       }
 #services-body{
-    height: 1000px;
+    height: 10000px;
 }
 #aboutUs-body {
     height: 200px;
@@ -291,7 +309,7 @@ body {
     height: 700px;
 }
 #order-page-body-parent {
-    height: 12000px;
+    height: 1000px;
 }
 
 #mobile-nav-parent-BG {
@@ -358,7 +376,7 @@ body {
    
     padding: 30px;
 }
-.buttonStyling {
+ .buttonStyling {
     height: 80px;
     width: 230px;
     position: relative;
@@ -369,13 +387,16 @@ body {
     
     font-weight: 800;
     font-size: 1.8rem;
-    /* border: 2px solid rgb(51, 51, 51); */
+ 
     border-radius: 15px;
     background-attachment: fixed;
-}
+} 
+
+
 .buttonStylingTextPosition {
     position: relative;
-    top: 27%;
+    top: 20%;
+    
 }
 #orderbuttonlink{ 
     height: 100%;
@@ -1211,24 +1232,26 @@ body {
 #order-grid {
     display: grid;
     position: relative;
-    height: 1000px;
+    height: 1200px;
     width: 100vw;
     margin: auto;
     top: 100px;
     background-color: rgb(255, 255, 255);
-    grid-template: 15fr 50px 10fr 5fr / 66fr 18fr 20fr;
+    grid-template: 330px 50px 500px 500px 10fr / 60fr 25fr 25fr;
     
 }
 #order-header-checkout {
     position: relative;
     margin: auto auto auto 30px;
     text-align: center;
+    font-size: 70px;
+    font-weight: 900;
 }
 #order-services {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     position: relative;
-    margin: auto auto auto 30px;
+    margin: auto auto auto 65px;
     font-weight: 400;
     
 }
@@ -1243,7 +1266,7 @@ body {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
     position: relative;
-    margin: auto;
+    margin: auto auto auto 35%;
     font-weight: 400;
 }
 
@@ -1274,7 +1297,7 @@ body {
     top: 60px;
     height: 150px;
     width: 200px;
-    padding-left: 30px;
+    padding-left: 20px;
     
 }
 #number-input-position {
@@ -1345,17 +1368,52 @@ body {
 #price-position {
     position: relative;
     grid-row: 3 / 4;
-    grid-column: 3 / 4; 
+    grid-column: 3 / 4;
+    height: 60px;
+    width: 180px;
+    margin: 100px auto auto 0px;
+    left: 30px;
+    
+    
 }
-#price{
-    width: 100%;
-}
+
 
 #smart-button-container {
     position: relative;
     margin: auto;
     grid-row: 4 / 5;
     grid-column: 1 / 4;
+    top: 0px;
+}
+
+#total-position {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+    height: 100px;
+    width: 180px;
+    position: relative;
+    left: 30px;
+}
+
+.align-price-items {
+    position: relative;
+    display: inline-block;
+}
+.align-price-items-zero{ 
+    left: -5px;
+}
+
+#total-text {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    height: 100px;
+    width: 180px;
+}
+#total-text p {
+    position: relative;
+    left: 110px;
+    align-items: center;
+    font-weight: 800;
 }
 
 
@@ -1407,54 +1465,271 @@ width: 100%;
 /* Pattern page */
 /* Pattern page */
 
-#pattern-grid{ 
+
+/* #pattern-grid {
     display: grid;
     position: relative;
-    top: 600px;
-    height: 4000px;
-    width: 95vw;
-    grid-template: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr / 50fr 50fr;
-    margin: auto;
-    grid-gap: 25px;
-    
-}
-.patern-grid-item {
-    /* background-size: contain; */
-    background-image: url("https://lh3.googleusercontent.com/proxy/OP6R2olV3S5FOwUwDqno9tcO0CLov1t6htmNdVxi9-AOLf9ImjrP2cZLCvRGUMKp3VoaOoWAmV7eDXCXtxFH0rIQ7PVDC0PJqDAwKEqmPueTcmw7mWDR9bz_1g");
+    grid-template: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr / 33fr 33fr 33fr;
+    height: 2500px;
+    width: 100%;
+    top: 700px;
 }
 
-.patternHovered {
-    background-color: black;
-    z-index: 999;
-}
-
-
-
-/* 
-.project-hover-text{
-    position: relative;
-    top: 120px;
-    color: rgb(238, 238, 238);
-    z-index: 11;
-    text-align: center;
-}
-
-.project-hover-grey-background{
-    background-color: rgb(32, 32, 32);
-    height: 300px;
+.portfolio-works-container-parent {
     width: 300px;
-    z-index: 999999;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+    padding: 10px;
+    padding-top: 20px;
+    display: inline-block;
 }
 
-.project-hover-grey-background, .project-hover-text{
-    visibility: hidden;
+#grid-item1 {
+    position: relative;
+     grid-row: 1 / 2;
+    grid-column: 1 / 2; 
+    background-image: url("edited1-bottom.jpg");
+    height: 100%;
+    width: 100%;
 }
-.DandAConstruction-image:hover .project-hover-text{
-    visibility: visible; 
+.patterns-grey-hover-effect-DIV1 {
+   height: 100%;
+    width: 100%;
+    background-color:rgba(30, 32, 34, 0.6);
+    transition: 0.3s; 
+    display:none;
 }
-.DandAConstruction-image:hover .project-hover-grey-background{
-    visibility: visible; 
-} */
+.grey-effect-ADDED {
+    display:block;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+
+
+.contact-banner{
+    position: relative;
+    top:-100px;
+    right: 300px;
+    height: 350px;
+    width: 1000px;
+    background-color: rgb(130, 240, 255);
+    color: white;
+   transform: rotate(30deg);
+   z-index: -20;
+}
+.contact-banner-h1{
+    height: 30px;
+    font-size: 43px;
+    position: absolute;
+    top: 20px;
+    font-weight: bold;
+    z-index: 20;
+    color: white;
+    padding: 20px;
+    z-index: -20;
+}
+.contact-banner-p{
+    position: absolute;
+    top: 130px;
+    padding: 15px;
+    font-size: 20px;
+    z-index: 20;
+    color: white;
+    text-align: center;
+    margin: auto;
+    z-index: -20;
+}
+#fucking-css-overidding{
+    width: 200px;
+    height: 200px;
+}
+.contact-image-container{
+    padding:10px;
+    position: relative;
+    
+    
+    /* max-height: 300px;
+    max-width: 90%; */
+    background-color:rgb(242, 246, 250);
+    margin: auto;
+    top: -250px;
+
+}
+.contact-image{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-image: url("yellow.jpg");
+    background-repeat: no-repeat;
+}
+.contact-image-container h4{
+    text-align: center;
+    position: relative;
+    top: -70px;
+}
+.contact-page-grid{
+    display: grid;
+    position: relative;
+    top: -240px; 
+    grid-template: 100px 70px 200px / 100fr;
+    padding: 10px;
+    margin: 10px;
+    background-color:rgb(242, 246, 250);
+    z-index: 1000;
+    
+
+}
+.contact-grid-section1{
+    font-size: 20px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    padding: 10px;
+    text-align: center;
+
+}
+.contact-grid-section2{
+    padding: 10px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+
+
+
+
+
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+/* MOBILE CONTACT PAGE */
+
+
+.contact-banner{
+    position: relative;
+    top:-100px;
+    right: 300px;
+    height: 350px;
+    width: 1000px;
+    background-color: rgb(130, 240, 255);
+    color: white;
+   transform: rotate(30deg);
+   z-index: -20;
+}
+.contact-banner-h1{
+    height: 30px;
+    font-size: 43px;
+    position: absolute;
+    top: 20px;
+    font-weight: bold;
+    z-index: 20;
+    color: white;
+    padding: 20px;
+    z-index: -20;
+}
+.contact-banner-p{
+    position: absolute;
+    top: 130px;
+    padding: 15px;
+    font-size: 20px;
+    z-index: 20;
+    color: white;
+    text-align: center;
+    margin: auto;
+    z-index: -20;
+}
+#fucking-css-overidding{
+    width: 200px;
+    height: 200px;
+}
+.contact-image-container{
+    padding:10px;
+    position: relative;
+    
+    
+    /* max-height: 300px;
+    max-width: 90%; */
+    background-color:rgb(242, 246, 250);
+    margin: auto;
+    top: -250px;
+
+}
+.contact-image{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-image: url("yellow.jpg");
+    background-repeat: no-repeat;
+}
+.contact-image-container h4{
+    text-align: center;
+    position: relative;
+    top: -70px;
+}
+.contact-page-grid{
+    display: grid;
+    position: relative;
+    top: -240px; 
+    grid-template: 100px 70px 200px / 100fr;
+    padding: 10px;
+    margin: 10px;
+    background-color:rgb(242, 246, 250);
+    z-index: 1000;
+    
+
+}
+.contact-grid-section1{
+    font-size: 20px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    padding: 10px;
+    text-align: center;
+
+}
+.contact-grid-section2{
+    padding: 10px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
 
 
 

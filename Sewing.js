@@ -106,11 +106,11 @@ function tOsExpand() {
 
 const ContactUs = document.getElementById("contact-form-Submit-button");
 
-ContactUs.addEventListener('click', (e) => {
+// ContactUs.addEventListener('click', (e) => {
    
-    sendEmail();
+//     sendEmail();
     
-});
+// });
 
 
 function sendEmail() {
@@ -142,33 +142,104 @@ function updateOrderAmount() {
 
     //as a # not the element
     let price = parseInt(document.getElementById("price").innerHTML);
+    let total = parseInt(document.getElementById("total").innerHTML);
 
 
     if (price < 250) {
         
         document.getElementById("price").innerHTML = ((document.getElementById("number-input").value) * 50);
+        document.getElementById("total").innerHTML = ((document.getElementById("number-input").value) * 50);
+        console.log(typeof ((document.getElementById("number-input").value) * 50))
 
 
     }
     else if (price <= 250 && price >= 100) {
         
          document.getElementById("price").innerHTML = ((document.getElementById("number-input").value) * 50);
+         document.getElementById("total").innerHTML = ((document.getElementById("number-input").value) * 50);
 
 
     }
     else if (price > 250) {
         
-        document.getElementById("price").innerHTML = "250";
+        document.getElementById("price").innerHTML = 250;
+        document.getElementById("total").innerHTML = 250;
         throw new Error("Please enter a quantity between 1 and 5. Thank you.")
         
     }
     else if (price < 50) {
         
-        document.getElementById("price").innerHTML = "50";
+        document.getElementById("price").innerHTML = 50;
+        document.getElementById("total").innerHTML = 50;
         throw new Error("Please enter a quantity between 1 and 5. Thank you.")
         
     }
     
 };
 
+//pattern page
+//pattern page
+//pattern page
+//pattern page
 
+const block1 = document.querySelector(".patterns-grey-hover-effect-DIV1");
+const image1 = document.getElementById("grid-item1");
+
+console.log("it worked")
+image1.addEventListener("mouseover" , () => {
+
+});
+
+
+// const image1 = document.querySelector(".new-services-grid-IMAGE-1");
+// const image2 = document.querySelector(".new-services-grid-IMAGE-2");
+// const image3 = document.querySelector(".new-services-grid-IMAGE-3");
+// const image4 = document.querySelector(".new-services-grid-IMAGE-4");
+// const image5 = document.querySelector(".new-services-grid-IMAGE-5");
+// const image6 = document.querySelector(".new-services-grid-IMAGE-6");
+
+// const block1 = document.querySelector(".first-position");
+// const block2 = document.querySelector(".second-position");
+// const block3 = document.querySelector(".third-position");
+
+// const landingButtons = document.querySelector(".landing-buttons");
+// const icon = document.querySelector(".icon");
+// //for some reason I was unable to reuse the front page link animations on hover. I had to duplicate it for the two links
+// const landingButtons2 = document.querySelector(".landing-button2");
+// const icon2 = document.querySelector(".icon2");
+
+
+
+
+
+
+
+
+// // 
+// block1.addEventListener("mouseover" , () => {
+//     image1.classList.add("add-opacity-just-for-first-block");
+//     block1.classList.add("services-background-color-ADD");
+
+// });
+// block1.addEventListener("mouseleave" , () => {  
+//     image1.classList.remove("add-opacity-just-for-first-block");
+//     block1.classList.remove("services-background-color-ADD");
+// });
+// // 
+// block2.addEventListener("mouseover" , () => {
+//     image2.classList.add("add-opacity");
+//     block2.classList.add("services-background-color-ADD");   
+// });
+// block2.addEventListener("mouseleave" , () => {  
+//     image2.classList.remove("add-opacity");
+//     block2.classList.remove("services-background-color-ADD"); 
+// });
+// // 
+// block3.addEventListener("mouseover" , () => {
+//     image3.classList.add("add-opacity");  
+//     block3.classList.add("services-background-color-ADD");   
+// });
+// block3.addEventListener("mouseleave" , () => {  
+//     image3.classList.remove("add-opacity"); 
+//     block3.classList.remove("services-background-color-ADD"); 
+// });
