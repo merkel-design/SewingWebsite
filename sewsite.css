@@ -18,6 +18,28 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+ /* FONTS */
+
+    /* font-family: 'Quicksand', sans-serif; */
+
+    @font-face {
+        font-family: 'Tahu!';
+        src: url('Tahu.woff2') format('woff2'),
+            url('Tahu.woff') format('woff'),
+            url('Tahu.ttf') format('truetype');
+        
+        font-display: swap;
+        
+    }
+    
+   
+    
+
+
+
+    /* END FONTS */
+
+
 
 
 
@@ -30,7 +52,67 @@ body {
 /* THIS IS THE DESKTOP VERSION OF THE site....I messed up and coded the desktop version on the mobile media query.. */
 
 
-@media (max-width: 1199.98px){
+/* @media (max-width: 1199.98px){ */
+
+    /* @media screen 
+ and (max-width: 14000px) 
+ and (min-width: 900px) 
+{  */
+
+    .default-header-desktop {
+        font-weight: 900;
+        font-size: 50px;
+        font-family: 'Quicksand', sans-serif;
+    }
+        /* Default SubHeader */
+    .default-subheader-desktop {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+    }
+        /* Default Paragraph */
+    .default-paragraph-desktop {
+        font-weight: 200;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+    }
+    .default-nav-bar-font {
+        font-weight: 200;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    }
+
+    
+    a {
+        text-decoration: none !important; 
+        cursor: pointer;
+        
+    }
+    a:visited{
+        
+        color: inherit; 
+        text-decoration: none !important;
+      }
+    a:hover {
+        color: green; 
+        text-decoration: none !important;
+    }
+    .default-CENTER-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .default-image-styling {
+        background-size: cover;
+        display: block;
+        background-repeat: no-repeat;
+    }
+   
+
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
 
 
  .header-img {
@@ -74,6 +156,87 @@ body {
 .nav-bar-word-format {
     margin: 0 30px 0 30px;
 }
+
+
+/* removing mobile stylinhg */
+/* removing mobile stylinhg */
+/* removing mobile stylinhg */
+
+#mobile-nav-parent-BG {
+    display: none;
+}
+#mobileNavSlider {
+    display: none;
+}
+#burger {
+    display: none;
+}
+
+/* removing mobile stylinhg */
+/* removing mobile stylinhg */
+/* removing mobile stylinhg */
+
+.desktop-nav-bar {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    
+    
+}
+.desktop-nav-bar li {
+    display: inline-block;
+    margin: 27px;
+    
+}
+.desktop-icon-wrapper {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.desktop-icon-container {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    
+    
+
+}
+.desktop-icon-mainpage {
+    /* max-width: 100%;
+    height: 100%; */
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    display: block;
+    background-image: url("https://i0.wp.com/www.orchidowlquilts.com/wp-content/uploads/2020/02/icon-quilting-300x300.png?resize=300%2C300&ssl=1");
+}
+
+
+
+.landing-grid-parent{
+    grid-row-start: 3 / 4;
+}
+
+.nav-bar{
+    /* visibility: hidden; */
+    position: relative;
+    margin: auto;
+    color: green;
+
+}
+.nav-bar li{
+    display:inline-flex;
+    text-align: center;
+    font-weight: bold;
+}
+.nav-bar-word-format {
+    margin: 0 30px 0 30px;
+}
 .landing-grid {
     height: 100%;
     width: 100%;
@@ -90,11 +253,351 @@ body {
     padding: 50px;
     margin: 10px;
     grid-column: 1 / 3;
+    
+    
+}
+
+.block-container-grid {
+    display: grid;
+    position: relative;
+    top: 1000px;
+    height: 2000px;
+    width: 90vw;
+    grid-template: 33fr 33fr 33fr / 90vw;
+    margin: auto;
+    grid-gap: 50px;
+    
+}
+
+.mainpage-block {
+    background-color:rgb(255, 255, 255);
+}
+#gallery-mainPage-box-parent {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+#services-mainPage-box-parent {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+#aboutUs-mainPage-box-parent {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;  
+}
+
+.sub-background {
+    height: 95%;
+    width: 96%;
+    background-color:rgb(226, 226, 226);
+    margin: auto;
+    position: relative;
+    top: 2.8%;
+}
+#galleryBGimg {
+    background-image: url(galleryIMG.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+    background-size: cover;
+}
+#servicesBGimg {
+    background-image: url(servicesIMG.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.desktop-header-slogan-grid {
+    display: grid;
+    height: 80vh;
+    width: 100%;
+}
+
+
+.header-slogan-parent {
+    display: inline-block;
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    top: 5vh;
+    overflow: visible;
+
+}
+
+#CTA {
+    position: relative;
+    top: 200px;
+}
+.MainPage-CTA {
+    font-weight: 1000;
+    font-size: 20px;
+    width: 480px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.MainPage-name-parent {
+    
+    width: 220px;
+    height: 20px;
+    margin: auto;
+    font-family: 'Tahu!';
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MainPage-Name {
+    margin: auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    overflow: visible;
+    position: relative;
+    letter-spacing: 2px;
+    
+}
+ .buttonStyling {
+    height: 40px;
+    width: 130px;
+    position: relative;
+    background-color:#ffdce6;
+    text-align: center;
+    font-weight: 800;
+    font-size: 14px;
+    border-radius: 15px;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.buttonStylingTextPosition {
+    position: relative;
+    top: 20%;
+    
+}
+#orderbuttonlink{ 
+    height: 100%;
+    width: 100%;
+}
+
+#main-page-paintBrush-BG {
+    position: relative;
+    top: 600px;
+    height: 600px;
+    width: 80%;
+    background-image: url(paintBrush.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    /* overflow: hidden; */
     
 }
 
 
+#front-page-text {
+    position: relative;
+    top: 120px;
+    text-align: center;
+    margin: 90px 190px 0 190px;
+    font-size: 2.1rem;
+    font-weight: 400;
+    color:rgb(51, 51, 51);
+    font-family: 'Tahu!';
+    font-size: 100px;
+    color: white;
+
+    
+}
+
+#Landingpage-image-container {
+    height: 50vh;
+    width: 80vw;
+    position: relative;
+    background-color: grey;
+    margin: auto;
+    top: 22px;
+     
+}
+#mainpage-image {
+    background-image: url("copy.PNG");
+    height: 100%;
+    width: 100%;
+}
+
+#mainpage-header-on-image {
+    position: relative;
+    top: 30%;
+    left: 50vw;
+    font-size: 30px;
+    width: 330px;
+    text-align: center;
+    display: block;
+}
+#mainpage-paragraph-on-image {
+    position: relative;
+    top: 30%;
+    left: 50vw;
+    font-size: 30px;
+    width: 330px;
+    text-align: center;
+    display: block;
+}
+
+#front-page-quilt-header {
+    text-align: center;
+    position: relative;
+    top: 150px;
+}
+#frontPage-3-panel-grid {
+    display: grid;
+    position: relative;
+    top: 250px;
+    width: 90%;
+    height: 350px;
+    grid-template: 80fr 20fr / 33fr 33fr 33fr;
+    margin: auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 150px;
+
+}
+#frontPage-3-panel-grid-item1 {
+    height:100%;
+    width: 100%;
+    background-image: url("https://image.shutterstock.com/image-vector/set-sewing-patterns-260nw-233979679.jpg");
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#frontPage-3-panel-grid-item2 {
+    height:100%;
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-image: url("https://image.shutterstock.com/image-vector/set-sewing-patterns-260nw-233979679.jpg");
+}
+#frontPage-3-panel-grid-item3 {
+    height:100%;
+    width: 100%;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-image: url("https://image.shutterstock.com/image-vector/set-sewing-patterns-260nw-233979679.jpg");
+}
+#shop-pattern1 {
+    height:100%;
+    width: 100%;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+#shop-pattern2 {
+    height:100%;
+    width: 100%;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+#shop-pattern3 {
+    height:100%;
+    width: 100%;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+   
+}
+.block-container-grid {
+    display: grid;
+    position: relative;
+    top: 2000px;
+    height: 2000px;
+    width: 90vw;
+    grid-template: 33fr 33fr 33fr / 90vw;
+    margin: auto;
+    grid-gap: 50px;
+    
+}
+#howToOrder-header {
+    position: relative;
+    top: 500px;
+}
+#howToOrder-grid {
+    display: grid;
+    position: relative;
+    top: 650px;
+    width: 90%;
+    height: 950px;
+    grid-template: 50fr 50fr / 50fr 50fr;
+    margin: auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+#social-vali-grid {
+    display: grid;
+    position: relative;
+    top: 380px;
+    width: 90%;
+    height: 550px;
+    grid-template: 100fr / 50fr 50fr;
+    margin: auto;
+    grid-column-gap: 20px;
+}
+
+#socialVali-text-parent {
+    grid-row: 1 / 2;
+    grid-column:1 / 2 ;
+}
+#socialVali-image {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/36/Stephanie_March.jpg");
+}
+#social-vali-paragraphStyling {
+    position: relative;
+    margin-top: 40px;
+}
+#socialVali-image {
+    border-radius: 10px;
+    background-position: center;
+    
+    max-width: 35vw;
+    
+}
+
+#carousel-positioning-INDEX {
+    position: relative;
+    top: 550px;
+}
+#carouselExampleIndicators {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    
+
+}
+
+/* 
+#carouselExampleIndicators {
+    width: 40%!important;
+}
+.carousel-item {
+    height: 500px;
+    
+    left: 40%;
+    
+   
+}
+#carouselExampleIndicators {
+    width: 40%!important;
+}
+.carousel-inner {
+    
+    
+} */
+
+
     
 
 /* DO NOTE CODE BELOW THIS BRACKET */
@@ -113,9 +616,9 @@ body {
 /* DO NOTE CODE BELOW THIS BRACKET */
 /* DO NOTE CODE BELOW THIS BRACKET */
 /* DO NOTE CODE BELOW THIS BRACKET */
-}
 
 
+
 /* BEGINING OF MOBILE */
 /* BEGINING OF MOBILE */
 /* BEGINING OF MOBILE */
@@ -224,7 +727,12 @@ body {
 /* BEGINING OF MOBILE */
 /* BEGINING OF MOBILE */
 
-@media (min-width: 600px) {
+/* @media (max-width: 600px) { */
+
+    @media screen 
+ and (max-width: 1000px) 
+ and (min-width: 480px) 
+{ 
 
 body {
     
@@ -232,27 +740,7 @@ body {
     
     }
 
-    /* FONTS */
-
-    /* font-family: 'Quicksand', sans-serif; */
-
-    @font-face {
-        font-family: 'Tahu!';
-        src: url('Tahu.woff2') format('woff2'),
-            url('Tahu.woff') format('woff'),
-            url('Tahu.ttf') format('truetype');
-        
-        font-display: swap;
-        
-    }
-    
    
-    
-
-
-
-    /* END FONTS */
-
     /* Default HEADER */
 .default-header {
     font-weight: 900;
@@ -312,23 +800,62 @@ body {
     height: 1000px;
 }
 
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+
+.desktop-nav-bar {
+    display: none;
+}
+
+.desktop-header-slogan-grid {
+    display: none;
+}
+#mainpage-header-on-image {
+    display: none;
+}
+#mainpage-paragraph-on-image {
+    display: none;
+}
+
+
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+/* GETTING RID OF DESKTOP CODE */
+
+.desktop-icon-wrapper {
+    position: relative;
+    top: 90px
+}
+
 #mobile-nav-parent-BG {
+    display: inline-block;
     position: fixed;
     z-index: 999;
     height: 130px;
     width: 100%;
-    overflow: visible;
-   
-    
+    overflow: visible; 
     
 }
-
+/* BACKGROUND IMAGE OF BODY ON HEADER PAGE OR INDEX RATHER */
 .mobile-background-header-image {
     height: 100vh;
     width: 100%;
     position: absolute;
     top:0;
-    background-image: url(shutterstock_365718428.jpg);
+    
     z-index: -9999;
     opacity: 80%;
     background-repeat: no-repeat;
@@ -336,46 +863,91 @@ body {
     background-position: center;
     background-size: cover;
 }
-.mobile-header-slogan-parent {
-    height: 30vh;
+.header-slogan-parent {
+    display: inline-block;
+    height: 20vh;
     width: 100vw;
     position: relative;
-    top: 20vh;
+    top: 15vh;
     overflow: visible;
 
 }
-#CTA {
+#front-page-quilt-header {
     position: relative;
-    top: 200px;
+    top: 1200px;
+}
+
+#CTA {
+    width: 50%;
+    height: 50%;
+    margin-right: 20px;
+    position: relative;
+    top: 600px;
 }
 .MainPage-CTA {
     font-weight: 1000;
-    font-size: 130px;
+    font-size: 60px;
     width: 480px;
     margin: auto;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 .MainPage-name-parent {
-    border: 1px solid black;
+    display: block;
     width: 70%;
-    height: 340px;
+    height: 140px;
     margin: auto;
     font-family: 'Tahu!';
     color: rgb(0, 0, 0);
     font-weight: 1000;
     font-size: 60px;
+    position: relative;
+    top: 90px;
+    z-index: 30;
 }
+
 .MainPage-Name {
     margin: auto;
     text-align: center;
     font-weight: 900;
-    font-size: 120px;
+    font-size: 50px;
     overflow: visible;
     position: relative;
-   
-    padding: 30px;
+    letter-spacing: 2px;
 }
+
+
+#Landingpage-image-container {
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    top: 290px;
+    background-color: grey;
+    margin: auto;
+    z-index: 20;
+    background-position: left;
+    opacity: 0.8;
+     
+}
+
+#social-vali-grid {
+    top: 1500px;
+}
+
+#carousel-positioning-INDEX {
+    top: 1700px;
+}
+
+#howToOrder-header {
+    top: 1800px;
+}
+#howToOrder-grid {
+    top: 1900px;
+}
+
+
+
+
  .buttonStyling {
     height: 80px;
     width: 230px;
@@ -461,22 +1033,15 @@ body {
 }
    
 
-.header-grid{
-    visibility: hidden;
-    display: grid;
-    height: 60vh;
-    width: 86%;
-    margin: auto;
 
-    grid-template-rows: 2vh 7vh 30vh 7vh 50vh;
-    grid-template-columns: 100%;
+
+/* BURGER STYLING */
+/* BURGER STYLING */
+/* BURGER STYLING */
+
+#burger {
+    display: block;
 }
-
-
-
-/* BURGER STYLING */
-/* BURGER STYLING */
-/* BURGER STYLING */
 .mobileNav {
     height: 60px;
     width: 70px;
@@ -532,6 +1097,7 @@ body {
 }
 
 #mobileNavSlider {
+    display: inline-block;
     position: fixed;
     right: 0;
     top: 0;
@@ -644,59 +1210,51 @@ body {
     
 }
 
-.block-container-grid {
+#frontPage-3-panel-grid {
     display: grid;
     position: relative;
-    top: 1000px;
-    height: 2000px;
-    width: 90vw;
-    grid-template: 33fr 33fr 33fr / 90vw;
+    top: 1250px;
+    width: 90%;
+    height: 350px;
+    grid-template: 80fr 20fr / 33fr 33fr 33fr;
     margin: auto;
-    grid-gap: 50px;
+    grid-gap: 10px;
+
+}
+#frontPage-3-panel-grid-item1 {
     
-}
-
-.mainpage-block {
-    background-color:rgb(255, 255, 255);
-}
-#gallery-mainPage-box-parent {
-    grid-row: 1 / 2;
+    background-image: url("https://image.shutterstock.com/image-vector/set-sewing-patterns-260nw-233979679.jpg");
     grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
-
-#services-mainPage-box-parent {
+#frontPage-3-panel-grid-item2 {
+    
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-image: url("https://image.shutterstock.com/image-vector/set-sewing-patterns-260nw-233979679.jpg");
+}
+#frontPage-3-panel-grid-item3 {
+    
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-image: url("https://image.shutterstock.com/image-vector/set-sewing-patterns-260nw-233979679.jpg");
+}
+#shop-pattern1 {
+    
     grid-row: 2 / 3;
     grid-column: 1 / 2;
 }
-
-#aboutUs-mainPage-box-parent {
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;  
+#shop-pattern2 {
+   
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+#shop-pattern3 {
+   
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
 }
 
-.sub-background {
-    height: 95%;
-    width: 96%;
-    background-color:rgb(226, 226, 226);
-    margin: auto;
-    position: relative;
-    top: 2.8%;
-}
-#galleryBGimg {
-    background-image: url(galleryIMG.jpg);
-    background-repeat: no-repeat;
-    background-size:100% 100%;
-    background-position: center;
-    background-size: cover;
-}
-#servicesBGimg {
-    background-image: url(servicesIMG.jpg);
-    background-repeat: no-repeat;
-    background-size:100% 100%;
-    background-position: center;
-    background-size: cover;
-
-}
 
 
 /* SERVICES PAGE */
