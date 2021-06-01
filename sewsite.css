@@ -81,6 +81,11 @@ body {
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
     }
+    .default-footerHeader-desktop {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+    }
 
     
     a {
@@ -106,6 +111,9 @@ body {
         background-size: cover;
         display: block;
         background-repeat: no-repeat;
+    }
+    ul { 
+        list-style-type: none;
     }
    
 
@@ -169,6 +177,9 @@ body {
     display: none;
 }
 #burger {
+    display: none;
+}
+.mobile-footer {
     display: none;
 }
 
@@ -528,7 +539,7 @@ body {
     display: grid;
     position: relative;
     top: 650px;
-    width: 90%;
+    width: 50%;
     height: 950px;
     grid-template: 50fr 50fr / 50fr 50fr;
     margin: auto;
@@ -578,6 +589,28 @@ body {
 
 }
 
+/* .carousel-item {
+    height: 300px;
+    width: 400px;
+
+    
+  } */
+  .carousel-inner{
+    width:50px;
+    max-height: 200px !important;
+  }
+
+  .myStylingCarousel {
+    width:50px; DO IT YAAAAAAAAAAAAS BITCH
+  }
+  .d-block {
+    width:50px;
+    max-height: 200px !important;
+  }
+  .w-100 {
+    width: 50px !important;
+  }
+
 /* 
 #carouselExampleIndicators {
     width: 40%!important;
@@ -598,8 +631,131 @@ body {
 } */
 
 
-    
 
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+
+/* 
+        <div id="desktop-footer">
+            <div id="navigation-footer"></div>
+            <div id="FAQ-footer"></div>
+            <div id="contact-footer"></div>
+            <div id="help-footer"></div>
+            <div id="social-and-icon-name-footer"></div>
+        </div> */
+
+
+#desktop-footer {
+    display: grid;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    top: 900px;
+    grid-template: 80fr 20fr / 20fr 20fr 30fr 30fr;
+    border-top: 1px solid rgb(226, 226, 226);
+}
+#navigation-footer {
+    position: relative;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+}
+/* #footer-nav {
+     margin-left: 40%; 
+   
+} */
+.footer-item-top {
+    margin-top: 30px;
+}
+.center-footer-itemDSKTP {
+    display: flex;
+    justify-content: left;
+    padding-left: 60px;
+}
+.footer-UL-margin {
+    margin-top: 7px;
+}
+#FAQ-footer {
+    position: relative;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+#contact-footer {
+    position: relative;
+    grid-row:  1 / 2;
+    grid-column: 3 / 4;
+}
+#help-footer {
+    position: relative;
+    grid-row:  1 / 2;
+    grid-column: 4 / 5;
+}
+#social-and-icon-name-footer {
+    position: relative;
+    grid-row:  2 / 3;
+    grid-column: 1 / 5;
+    border-top: 1px solid rgb(226, 226, 226);
+}
+.fa-phone {
+    color: rgb(172, 172, 172);
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+.fa-envelope-open-text {
+    color: rgb(172, 172, 172);
+}
+#helpCTA{ 
+    font-size: 23px;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+}
+.footer-centering-DSKTP {
+    display: flex;
+    justify-content: center;
+}
+#footerEmailIcon {
+    position: relative;
+    margin-left: 20px;
+}
+#footer-name-styling {
+    font-family: 'Tahu!';
+    position: relative;
+    display: flex;
+    align-items: left;
+    margin-left: 40px;
+    top: 30px;
+    
+    
+}
+.fa-facebook {
+    margin-right: 20px;
+}
+#align-footer-copyright-text {
+    width: 200px;
+    position: relative;
+    left: 80%;
+    top: -20px;
+    
+}
+#footer-copyright-text {
+    font-size: 12px;
+    color: rgb(191, 191, 191);
+    
+}
 /* DO NOTE CODE BELOW THIS BRACKET */
 /* DO NOTE CODE BELOW THIS BRACKET */
 /* DO NOTE CODE BELOW THIS BRACKET */
@@ -943,6 +1099,7 @@ body {
 }
 #howToOrder-grid {
     top: 1900px;
+    width: 90%;
 }
 
 
@@ -2312,17 +2469,27 @@ width: 100%;
 /* FOOTER */
 /* FOOTER */
 
-
-footer {
+.mobile-footer {
+    display: inline-block;
     position: relative;
     /* margin-top: 500px; */
+    bottom: 890px;
+    top: 100%;
+    height: 900px;
+    width: 980px;
+    overflow:visible;
+}
+
+/* footer {
+    position: relative;
+   
     bottom: 890px;
     top: 100%;
     
     height: 900px;
     width: 980px;
     overflow:visible;
-}
+} */
 
 #footer-grid {
     display: grid;
