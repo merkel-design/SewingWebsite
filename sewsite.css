@@ -790,7 +790,7 @@ body {
     display: grid;
     height: 6400px;
     width: 100%;
-    grid-template: 10fr 40fr 20fr 5fr 10fr 30fr 20fr 45fr 40fr 15fr 40fr 15fr 40fr 15fr 40fr 15fr/ 50% 50%;
+    grid-template: 10fr 40fr 7fr 5fr 20fr 30fr 7fr 5fr 15fr 15fr 40fr 15fr 40fr 15fr 40fr 15fr/ 50% 50%;
     position: relative;
     top: 100px;
     
@@ -801,7 +801,7 @@ body {
     font-weight: 900;
     font-size: 20px;
     
-    margin: 0 auto;
+    margin: auto;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -860,9 +860,9 @@ body {
 }
 #services-slogan {
     position: relative;
-    margin: auto;
+    margin: auto auto auto 80px;
     text-align: center;
-    width: 20vw;
+    width: 40vw;
     font-weight: 300;
     font-size: 15px;
     font-family: 'Quicksand', sans-serif;
@@ -879,36 +879,43 @@ body {
 }
 
 
-#servicesSUBheader1 {
-/* positioning */
-    position: relative;
-    top:30%;
-    width: 95%;
-    height: 45%;
-    grid-row: 3 / 4;
-    grid-column: 1 / 3;
-    margin: auto;
-    
-}
+
 #servicesSUBheader2 {
     /* positioning */
     position: relative;
-    width: 95%;
+    width: 50%;
     grid-row: 4 / 5;
     grid-column: 1 / 2;
-    margin: 20px auto auto 25px;
+    margin: auto;
+    text-align: left;
     
+}
+#servicesSUBheader2x5 {
+    position: relative;
+    width: 50%;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    margin: auto;
+    text-align: left;
 }
 #servicesSUBheader3 {
     /* positioning */
     position: relative;
-    width: 95%;
-    grid-row: 7 / 8;
+    width: 50%;
+    height: 40px;
+    grid-row: 8 / 9;
     grid-column: 1 / 3;
     margin:  50px auto 0 auto;
     position: relative;
-    top: 30%;
     
+    
+    
+}
+#servicesTextbody2x5 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    margin: 20px auto;
+    width: 50%;
 }
 .services-textBody {
     font-weight: 300;
@@ -926,19 +933,19 @@ body {
     grid-row: 4 / 5;
     grid-column: 1 / 3;
     margin: auto;
-    width: 95%;
+    width: 50%;
 }
 #servicesTextbody2 {
     grid-row: 5 / 6;
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
     margin: 20px auto;
-    width: 95%;
+    width: 50%;
 }
 #servicesTextbody3 {
-    grid-row: 8 / 9;
+    grid-row: 9 / 10;
     grid-column: 1 / 3;
     margin: 28px auto auto auto;
-    width: 95%;
+    width: 50%;
 }
 
 
@@ -970,7 +977,6 @@ body {
 
 #services-image-left-side {
     background-image: url(servicesIMG.jpg);
-    margin: 20px;
     position: relative;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
@@ -981,7 +987,6 @@ body {
 }
 #services-image-right-side {
     background-image: url(servicesIMG.jpg);
-    margin: 20px;
     position: relative;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -990,6 +995,28 @@ body {
     margin: auto auto auto 40px;
     top: 20px;
 }
+
+#services-image-middle-left {
+    background-image: url(servicesIMG.jpg);
+    position: relative;
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
+    height: 50vh;
+    width: 40vw; 
+    margin: auto;
+}
+#services-image-middle-right {
+    background-image: url(servicesIMG.jpg);
+    position: relative;
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+    height: 50vh;
+    width: 40vw; 
+    margin: auto;
+    
+}
+
+
 
 
 
@@ -1181,7 +1208,7 @@ body {
     height: 2000px;
       }
 #services-body{
-    height: 10000px;
+    height: 1700px;
 }
 #aboutUs-body {
     height: 200px;
@@ -1664,10 +1691,10 @@ body {
 
 #servicesPage-Grid {
     display: grid;
-    height: 6400px;
+    height: 10400px;
     width: 100%;
     
-    grid-template: 10fr 50fr 10fr 5fr 5fr 30fr 20fr 60fr 40fr 15fr 40fr 15fr 40fr 15fr 40fr 15fr/ 50vw 50vw;
+    grid-template: .1fr .5fr .3fr .2fr .8fr .2fr .5fr 1.6fr 1.6fr .3fr .5fr .5fr 4fr/ 50vw 50vw;
     position: relative;
     top: 50px;
     
@@ -1682,8 +1709,10 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 #services-slogan {
-    margin: auto auto auto auto;
-    width: 70%;
+    padding-right: 80px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
     font-weight: 300;
     font-size: 23px;
     font-family: 'Quicksand', sans-serif;
@@ -1709,6 +1738,7 @@ body {
     width: 80%;
     margin: auto 20px auto auto;
     top: 70px;
+    
 }
 #services-image-right-side {
     background-image: url(servicesIMG.jpg);
@@ -1755,8 +1785,8 @@ body {
     /* positioning */
     position: relative;
     width: 95%;
-    grid-row: 5 / 6;
-    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
     margin: 20px auto auto 25px;
     
 }
@@ -1764,12 +1794,28 @@ body {
     /* positioning */
     position: relative;
     
-    grid-row: 7 / 8;
+    grid-row: 10 / 11;
     grid-column: 1 / 3;
     margin:  20px auto;
     position: relative;
+    width: 95%;
     
-    
+}
+
+#servicesSUBheader2x5 {
+    position: relative;
+    width: 95%;
+    grid-row: 6 / 7;
+    grid-column: 1 / 3;
+    margin: auto;
+    text-align: left;
+}
+
+#servicesTextbody2x5 {
+    grid-row: 7 / 8;
+    grid-column: 1 / 3;
+    margin: 20px auto;
+    width: 95%;
 }
 .services-white-text {
     color: white;
@@ -1785,13 +1831,13 @@ body {
 
 
 #servicesTextbody2 {
-    grid-row: 6 / 7;
+    grid-row: 5 / 6;
     grid-column: 1 / 3;
     margin: 20px auto;
     width: 95%;
 }
 #servicesTextbody3 {
-    grid-row: 8 / 9;
+    grid-row: 11 / 12;
     grid-column: 1 / 3;
     margin: 28px auto auto auto;
     width: 95%;
@@ -1819,6 +1865,26 @@ body {
     grid-row: 16 / 17;
     grid-column: 1 / 3;
     margin: 0 20px auto 20px;
+}
+
+#services-image-middle-left {
+    background-image: url(servicesIMG.jpg);
+    position: relative;
+    grid-row: 8 / 9;
+    grid-column: 1 / 3;
+    height: 50vh;
+    width: 95vw; 
+    margin: auto;
+}
+#services-image-middle-right {
+    background-image: url(servicesIMG.jpg);
+    position: relative;
+    grid-row: 9 / 10;
+    grid-column: 1 / 3;
+    height: 50vh;
+    width: 95vw; 
+    margin: auto;
+    
 }
 
 
