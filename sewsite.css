@@ -59,6 +59,9 @@ body {
  and (min-width: 900px) 
 {  */
 
+
+    
+
     .default-header-desktop {
         font-weight: 900;
         font-size: 50px;
@@ -124,6 +127,22 @@ body {
     }
    
 
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
+/* Landing index page */
 /* Landing index page */
 /* Landing index page */
 /* Landing index page */
@@ -197,6 +216,9 @@ body {
     display: none; 
 }
 #mobile-complex-pattern-header{ 
+    display: none;
+}
+#mobile-SET3-pattern-header {
     display: none;
 }
 
@@ -630,24 +652,53 @@ body {
     width: 50px !important;
   }
 
-/* 
-#carouselExampleIndicators {
-    width: 40%!important;
-}
-.carousel-item {
-    height: 500px;
-    
-    left: 40%;
-    
-   
-}
-#carouselExampleIndicators {
-    width: 40%!important;
-}
-.carousel-inner {
-    
-    
-} */
+/* GALLERY IMPORT */
+.photo-gallery {
+    color:#313437;
+    background-color:#fff;
+    position: relative;
+    top: 300px;
+  }
+  
+  .photo-gallery p {
+    color:#7d8285;
+  }
+  
+  .photo-gallery h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+  }
+  
+  @media (max-width:767px) {
+    .photo-gallery h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+  
+  .photo-gallery .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto 40px;
+  }
+  
+  .photo-gallery .intro p {
+    margin-bottom:0;
+  }
+  
+  .photo-gallery .photos {
+    padding-bottom:20px;
+  }
+  
+  .photo-gallery .item {
+    padding-bottom:30px;
+  }
+  
+  
+/* END GALLERY IMPORT */
 
 
 
@@ -1317,16 +1368,25 @@ body {
    
 }
 #complex-pattern-parallax-img {
-    background-image: url(simplepatternparallax.jpg)!important;
+    background-image: url(copmplexPara.jpg)!important;
     background-attachment: fixed;
     background-position: bottom;
     opacity: 60%;
     width: 100%;
     height: 450px; 
-    clip-path: polygon(0% 0%, 26% 0%, 26% 100%, 23% 100%, 23% 8%, 3% 8%, 3% 100%, 1% 93%, 24% 93%, 24% 100%, 10% 100%, 3% 100%, 0 100%);
+    /* clip-path: polygon(0% 0%, 26% 0%, 26% 100%, 23% 100%, 23% 8%, 3% 8%, 3% 100%, 1% 93%, 24% 93%, 24% 100%, 10% 100%, 3% 100%, 0 100%); */
    
 }
-#simple-pattern-header {
+#SET3-pattern-parallax-img {
+    background-image: url(set3.jpg)!important;
+    background-attachment: fixed;
+    background-position: bottom;
+    opacity: 60%;
+    width: 100%;
+    height: 450px; 
+   
+}
+#pattern-header {
 
         position: absolute;
         opacity: 100%!important;
@@ -1343,6 +1403,10 @@ body {
 #complex-pattern-banner-position {
     position: relative;
     top: 550px;
+}
+#SET3-pattern-banner-position {
+    position: relative;
+    top: 850px;
 }
 
 
@@ -1392,6 +1456,26 @@ body {
     margin: auto;
     grid-gap: 20px; 
 }
+/* SET 3 PATTERNS GRID */
+/* SET 3 PATTERNS GRID */
+/* SET 3 PATTERNS GRID */
+#SET3-patterns {
+    position: relative;
+    top: 920px;
+    display: grid;
+    height: 700px;
+    width: 80%;
+    grid-template: 50fr 50fr / 33fr 33fr 33fr;
+    text-align: center;
+    margin: auto;
+    grid-gap: 20px; 
+
+    /* DELETE */
+    /* DELETE */
+    margin-bottom: 300px;
+    /* DELETE */
+    /* DELETE */
+}
 #simple-pattern-1 {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -1436,26 +1520,76 @@ body {
 
 
 
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
+/* GALLERY PAGE DESKTOP */
 
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
-/* DO NOTE CODE BELOW THIS BRACKET */
+#GALLERY-PAGE-BOLD-LINKS li {
+    font-weight: 400;
+}
 
+#gallery-page-gallery-position-or-parent {
+    position: relative;
+    top: 120px;
+    background-color: transparent;
+}
 
+#galleryPage-landing-BG {
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    background-image: url("modernquiltEDITED2.jpg");
+    background-position: center;
+    top: 0;
+    z-index: -10000;
+    
+}
+.Gallery-Header {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    top: 120px;
+    
+    text-align: center;
+    
+}
+.Gallery-Header h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+}
+.Gallery-Header p {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300;
+    font-size: 30px;
+}
+.gallery-subsection {
+    position: relative;
+    top: 400px;
+    margin: 20px;
+}
 
+.Gallery-CTA {
+    position: relative;
+    top: 600px;
+    height: 300px;
+    text-align: center;
+    
+}
 /* BEGINING OF MOBILE */
 /* BEGINING OF MOBILE */
 /* BEGINING OF MOBILE */
@@ -1685,6 +1819,9 @@ body {
     display: none;
 }
 #complex-pattern-banner-position {
+    display: none;
+}
+#SET3-pattern-banner-position {
     display: none;
 }
 
@@ -1982,6 +2119,7 @@ body {
     left: -40%;
     background-color: rgb(49, 49, 49);
     opacity: 50%;
+    top:0;
     
 }
 
@@ -2484,8 +2622,6 @@ body {
 /* GALLERY PAGE */
 /* GALLERY PAGE */
 /* GALLERY PAGE */
-
-
 /* GALLERY PAGE */
 /* GALLERY PAGE */
 /* GALLERY PAGE */
@@ -2494,18 +2630,31 @@ body {
 /* GALLERY PAGE */
 /* GALLERY PAGE */
 
-/* CAROUSEL GALLERY*/
-.carousel-positioning {
-    position: relative;
-    top: 300px;
+/* Imported gallery classes and ID EDITS by me */
+.lb-outerContainer {
+    top: 500px;
 }
+
+.lb-data .lb-close {
+    top: 500px;
+    position: relative;
+}
+.lb-number {
+    position: relative;
+    top: 500px;
+}
+/* END END END END Imported gallery classes and ID EDITS by me */
+
 .Gallery-Header {
     height: 300px;
     width: 100%;
     position: relative;
-    top: 350px;
+    top: 50px;
     text-align: center;
     
+}
+#galleryPage-landing-BG {
+    height: 850px;
 }
 .Gallery-Header h1 {
     font-family: 'Quicksand', sans-serif;
@@ -2514,7 +2663,7 @@ body {
 }
 .Gallery-Header p {
     font-family: 'Roboto', sans-serif !important;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 30px;
 }
 .gallery-subsection {
@@ -3011,6 +3160,13 @@ width: 100%;
     position: relative;
     top: 1000px;
 }
+#mobile-SET3-pattern-header {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 1200px;
+}
 
 
 
@@ -3065,10 +3221,27 @@ width: 100%;
     grid-template: 50fr 50fr / 33fr 33fr 33fr;
     text-align: center;
     margin: auto;
-    margin-bottom: 5000px;
     
     
 }
+
+/* SET 3 PATTERNS GRID */
+/* SET 3 PATTERNS GRID */
+/* SET 3 PATTERNS GRID */
+#SET3-patterns {
+    position: relative;
+    top: 1230px;
+    display: grid;
+    height: 750px;
+    width: 100%;
+    grid-template: 50fr 50fr / 33fr 33fr 33fr;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2000px;
+    
+    
+}
+
 #simple-pattern-1 {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
