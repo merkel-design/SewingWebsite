@@ -103,14 +103,38 @@ function tOsExpand() {
 };
 
 //Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
+//Contact Form JS
 
 const ContactUs = document.getElementById("contact-form-Submit-button");
 
-// ContactUs.addEventListener('click', (e) => {
+ContactUs.addEventListener('click', (e) => {
    
-//     sendEmail();
+    sendEmail();
     
-// });
+});
 
 
 function sendEmail() {
@@ -136,6 +160,20 @@ function sendEmail() {
 
    
 };
+
+
+// ORDER JS
+// ORDER JS
+// ORDER JS
+// ORDER JS
+// ORDER JS
+// ORDER JS
+// ORDER JS
+// ORDER JS
+// ORDER JS
+// ORDER JS
+// ORDER JS
+// ORDER JS
 
 
 function updateOrderAmount() {
@@ -181,14 +219,20 @@ function updateOrderAmount() {
 //pattern page
 //pattern page
 //pattern page
+//pattern page
+//pattern page
+//pattern page
+//pattern page
+//pattern page
+//pattern page
+//pattern page
+//pattern page
+//pattern page
+//pattern page
+//pattern page
+//pattern page
+//pattern page
 
-const block1 = document.querySelector(".patterns-grey-hover-effect-DIV1");
-const image1 = document.getElementById("grid-item1");
-
-console.log("it worked")
-image1.addEventListener("mouseover" , () => {
-
-});
 
 
 // const image1 = document.querySelector(".new-services-grid-IMAGE-1");
